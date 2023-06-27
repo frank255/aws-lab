@@ -28,15 +28,15 @@
   <nav class="nav-extended nav-full-header indigo lighten-2">
 
     <div class="nav-wrapper container">
-      <a href="/" class="brand-logo"><i class="material-icons">terrain</i>EarthQuake</a>
+      <a href="/" class="brand-logo"><i class="material-icons">terrain</i>AWS cloud</a>
 
       <ul class="right hide-on-med-and-down">
         <li><a href="/">About Us</a></li>
         {% if not session.user_name %}
-        <li><a href="#signUpModal">SignUp</a></li>
-        <li><a href="#signInModal">SignIn</a></li>
+        <li><a href="#signUpModal">Register</a></li>
+        <li><a href="#signInModal">LogIn</a></li>
         {% else %}
-        <li><a href="/signout">SignOut</a></li>
+        <li><a href="/signout">LogOut</a></li>
         <li><a href="#">{{session.user_name}}</a></li>
         {% endif %}
       </ul>
@@ -139,7 +139,7 @@
           <div class="row">
             <div class="file-field input-field">
               <div class="btn">
-                <span>Picture</span>
+                <span>Image</span>
                 <input type="file" id="picture" name="picture">
               </div>
               <div class="file-path-wrapper">
